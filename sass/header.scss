@@ -19,8 +19,10 @@
 .logo {
   text-decoration: none;
   display: flex;
+  align-items: center;
 
   &__text {
+    margin: 0;
     font-family: 'Magra';
     font-style: normal;
     font-weight: 600;
