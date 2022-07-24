@@ -375,6 +375,10 @@ body {
   cursor: pointer;
 }
 
+.button:hover {
+  opacity: 0.8;
+}
+
 .shared-wrapper {
   background-image: url("../assets/hero.jpg");
   background-repeat: no-repeat;
