@@ -1,30 +1,11 @@
-body {
-  font-family: 'Red Hat Text', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.container {
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.section-title {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 53px;
-  color: #F2785C;
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 40px;
-}
-
 .header {
   background: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+
+  @include media-tablet {
+    background: transparent;
+    box-shadow: none;
+  }
 }
 
 .header__container {
@@ -36,14 +17,22 @@ body {
 }
 
 .logo {
-  display: flex;
-  font-family: 'Magra';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
-  color: #FFFFFF;
   text-decoration: none;
+  display: flex;
+
+  &__text {
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    white-space: nowrap;
+
+    @include media-laptop {
+      display: none;
+    }
+  }
   
   &__img {
     display: block;
@@ -51,6 +40,12 @@ body {
     width: 30px;
     height: 30px;
     margin-right: 6px;
+  }
+}
+
+.nav {
+  @include media-tablet {
+    display: none;
   }
 }
 
@@ -62,22 +57,26 @@ body {
   text-decoration: none;
   &:not(:last-child) {
     margin-right: 42px;
+
+    @include media-tablet {
+      margin-right: 10px;
+    }
   }
   &:hover {
     opacity: 0.8;
   }
 }
 
-.button {
-  border: none;
-  background: #0D606F;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
-  color: #FFFFFF;
-  border-radius: 10px;
-  padding: 10px 30px;
-  cursor: pointer;
+.header__button {
+  @include media-tablet {
+    display: none;
+  }
 }
 
-.button:hover {
-  opacity: 0.8;
+.header__burger {
+  display: none;
+
+  @include media-tablet {
+    display: block;
+  }
 }

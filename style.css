@@ -331,9 +331,36 @@ body {
   margin-bottom: 40px;
 }
 
+.button {
+  border: none;
+  background: #0D606F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+@media (max-width: 414px) {
+  .button {
+    padding: 7.5px 9px;
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
 .header {
   background: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+@media (max-width: 768px) {
+  .header {
+    background: transparent;
+    box-shadow: none;
+  }
 }
 
 .header__container {
@@ -344,14 +371,22 @@ body {
 }
 
 .logo {
+  text-decoration: none;
   display: flex;
+}
+.logo__text {
   font-family: "Magra";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 39px;
   color: #FFFFFF;
-  text-decoration: none;
+  white-space: nowrap;
+}
+@media (max-width: 1024px) {
+  .logo__text {
+    display: none;
+  }
 }
 .logo__img {
   display: block;
@@ -359,6 +394,12 @@ body {
   width: 30px;
   height: 30px;
   margin-right: 6px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
 }
 
 .nav__item {
@@ -371,28 +412,39 @@ body {
 .nav__item:not(:last-child) {
   margin-right: 42px;
 }
+@media (max-width: 768px) {
+  .nav__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
 .nav__item:hover {
   opacity: 0.8;
 }
 
-.button {
-  border: none;
-  background: #0D606F;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
-  color: #FFFFFF;
-  border-radius: 10px;
-  padding: 10px 30px;
-  cursor: pointer;
+@media (max-width: 768px) {
+  .header__button {
+    display: none;
+  }
 }
 
-.button:hover {
-  opacity: 0.8;
+.header__burger {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header__burger {
+    display: block;
+  }
 }
 
 .shared-wrapper {
-  background-image: url("../assets/hero.jpg");
+  background: url("../assets/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 768px) {
+  .shared-wrapper {
+    background-image: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url("../assets/hero.jpg");
+  }
 }
 
 .hero__info {
@@ -403,6 +455,12 @@ body {
   padding-bottom: 254px;
   color: #FFFFFF;
 }
+@media (max-width: 768px) {
+  .hero__info {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+}
 
 .hero__title {
   font-style: normal;
@@ -412,12 +470,22 @@ body {
   color: #FFFFFF;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .hero__title {
+    display: none;
+  }
+}
 
 .hero__subtitle {
   font-style: italic;
   font-size: 20px;
   line-height: 24px;
   margin-top: 46px;
+}
+@media (max-width: 768px) {
+  .hero__subtitle {
+    display: none;
+  }
 }
 
 .hero__button-section {
@@ -429,6 +497,11 @@ body {
   border-radius: 16px;
   margin-top: 46px;
 }
+@media (max-width: 768px) {
+  .hero__button-section {
+    margin-top: 0;
+  }
+}
 
 .button-section__title {
   font-style: italic;
@@ -436,6 +509,25 @@ body {
   font-size: 24px;
   line-height: 29px;
   color: #F2785C;
+}
+@media (max-width: 768px) {
+  .button-section__title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.hero__button {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Red Hat Text";
+}
+@media (max-width: 768px) {
+  .hero__button {
+    font-size: 11px;
+    line-height: 15px;
+  }
 }
 
 .steps__container {
