@@ -1,0 +1,29 @@
+.steps__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps__img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background: #F2785C;
+  border-radius: 16px;
+}
+
+.steps__descr {
+  font-family: 'Aleo';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0D606F;
+  margin-top: 30px;
+}

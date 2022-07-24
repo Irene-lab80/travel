@@ -321,6 +321,16 @@ body {
   padding: 0 15px;
 }
 
+.section-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #F2785C;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
 .header {
   background: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
@@ -426,6 +436,36 @@ body {
   font-size: 24px;
   line-height: 29px;
   color: #F2785C;
+}
+
+.steps__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps__img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background: #F2785C;
+  border-radius: 16px;
+}
+
+.steps__descr {
+  font-family: "Aleo";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0D606F;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
