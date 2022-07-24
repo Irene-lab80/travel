@@ -1,0 +1,19 @@
+.footer {
+  color: #ffffff;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 60px;
+}
+
+.footer__copyright {
+  margin-right: 27%;
+}
+
+.socials {
+  display: flex;
+  column-gap: 20px;
+}

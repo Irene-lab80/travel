@@ -618,10 +618,13 @@ body {
   background: #F2785C;
 }
 
-.stories__container {
+.shared-container-bottom {
   background: url("../assets/stories-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.stories__container {
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.7);
 }
 
@@ -660,6 +663,26 @@ body {
 .stories__read-more {
   color: #0D606F;
   font-weight: 700;
+}
+
+.footer {
+  color: #ffffff;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 60px;
+}
+
+.footer__copyright {
+  margin-right: 27%;
+}
+
+.socials {
+  display: flex;
+  column-gap: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
