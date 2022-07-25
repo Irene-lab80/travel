@@ -577,26 +577,37 @@ body {
   margin: 40px auto 0;
 }
 
-.slider__container {
-  display: flex;
+.slider {
   max-width: 1440px;
   margin: auto;
   overflow: hidden;
 }
 
+.slider__container {
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+
 .slider__img {
   border-radius: 16px;
+  display: block;
 }
 
 .slider__item {
   margin: 0 30px;
   line-height: 0;
+  cursor: pointer;
 }
 .slider__item:first-child {
-  margin-left: -540px;
+  margin-left: 0;
 }
 .slider__item:last-child {
   margin-right: 0;
+}
+
+.slider__item.active {
+  border: 2px solid #F2785C;
 }
 
 .slider__pagination {
