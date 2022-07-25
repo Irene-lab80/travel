@@ -7,6 +7,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .steps__img-wrapper {
@@ -17,6 +19,11 @@
   width: 100px;
   background: #F2785C;
   border-radius: 16px;
+
+  @include media-tablet {
+    height: 70px;
+    width: 70px;
+  }
 }
 
 .steps__descr {
@@ -26,4 +33,9 @@
   line-height: 24px;
   color: #0D606F;
   margin-top: 30px;
+
+  @include media-tablet {
+    font-size: 10px;
+    line-height: 12px;
+  }
 }

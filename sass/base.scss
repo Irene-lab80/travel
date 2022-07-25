@@ -21,6 +21,16 @@ body {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 40px;
+
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 19px;
+  }
+
+  @include media-mobile {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .button {

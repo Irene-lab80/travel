@@ -22,18 +22,8 @@
 .slider__container {
   display: flex;
   justify-content: center;
-  // margin-left: -540px;
-  // transform: translateX(0);
   transition: .5s;
 }
-
-// .slider__container.slide-1 {
-//   transform: translateX(860px);
-// }
-
-// .slider__container.slide-1 {
-//   transform: translateX(-860px);
-// }
 
 .slider__img {
   border-radius: 16px;

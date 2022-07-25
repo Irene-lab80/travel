@@ -28,6 +28,13 @@
   filter: drop-shadow(0px 4px 4px #0D606F);
   border-radius: 16px;
   margin-right: 40px;
+  max-width: 400px;
+  height: fit-content;
+
+  @include media-tablet {
+    width: 155px;
+    height: 130px;
+  }
 }
 
 .stories__item-title {
@@ -35,11 +42,21 @@
   font-weight: 400;
   font-size: 35px;
   line-height: 42px;
+
+  @include media-tablet {
+    font-size: 11px;
+    line-height: 13px;
+  }
 }
 
 .stories__item-text {
   font-size: 20px;
   line-height: 24px;
+
+  @include media-tablet {
+    font-size: 9px;
+    line-height: 11px;
+  }
 }
 
 .stories__read-more {
