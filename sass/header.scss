@@ -38,7 +38,7 @@
   
   &__img {
     display: block;
-    background: url('../assets/logo.svg');    
+    background: url('#{$assetPath}/logo.svg');    
     width: 30px;
     height: 30px;
     margin-right: 6px;

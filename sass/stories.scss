@@ -1,5 +1,5 @@
 .shared-container-bottom {
-  background: url('../assets/stories-bg.jpg');
+  background: url('#{$assetPath}/stories-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
