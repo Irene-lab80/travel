@@ -1,17 +1,16 @@
 const modal = document.getElementById("modal");
-const btn = document.getElementById("login-button");
-const closeModal = document.getElementById("close");
+const btnLogin = document.getElementById("login-button");
+const body = document.getElementById("body");
 
-btn.addEventListener("click", () => {
+btnLogin.addEventListener("click", () => {
   modal.style.display = "block";
-});
-
-closeModal.addEventListener("click", () => {
-  modal.style.display = "none";
+  body.style.overflow = "hidden";
 });
 
 window.onclick = function (e) {
   if (e.target == modal) {
     modal.style.display = "none";
+    modal.style.display = "none";
+    body.style.overflow = "visible";
   }
 };

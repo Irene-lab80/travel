@@ -1,0 +1,129 @@
+.form__header {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #0D606F;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  height: 54px;
+  display: block;
+  background: #FFFFFF;
+  box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  padding: 0 15px;
+  min-width: 100%;
+  box-sizing: border-box;
+  border: none;
+  margin-top: 5px;
+}
+
+.label {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.form__button {
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.facebook-icon {
+  background-image: url('../assets/facebook.svg');
+  margin-right: 15px;
+}
+
+.google-icon {
+  background-image: url('../assets/google.svg');
+  margin-right: 15px;
+}
+
+.form__button {
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.form__button--facebook {
+  background: #1877F2;
+}
+
+.form__button--google {
+  background: #ffffff;
+  color: #0D606F;
+}
+
+.form__password-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.form__password-link:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(13, 96, 111, 0.5);
+  margin-bottom: 20px;
+  margin-top: 26px;
+}
+
+.form__register-link-outer {
+  text-align: center;
+  display: block;
+  font-family: 'Aleo';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(13, 96, 111, 0.5);
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+
+.form__line {
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Aleo';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(13, 96, 111, 0.5);
+}
+
+.form__line:before,
+.form__line:after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  background-color: rgba(13, 96, 111, 0.5);
+}
+
+.form__line:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.form__line:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
