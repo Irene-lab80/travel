@@ -455,13 +455,39 @@ body {
   }
 }
 
-.header__burger {
+.hamburger-line, .hamburger:after, .hamburger:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 5px;
+  width: 100%;
+  height: 3px;
+}
+
+.hamburger {
   display: none;
+  position: relative;
+  width: 26px;
+  height: 19px;
+}
+.hamburger:before {
+  top: 0;
+  left: 0;
+}
+.hamburger:after {
+  bottom: 0;
+  left: 0;
 }
 @media (max-width: 768px) {
-  .header__burger {
-    display: block;
+  .hamburger {
+    display: inline-block;
   }
+}
+
+.hamburger-line {
+  top: calc(50% - 1.5px);
+  left: 0;
 }
 
 .shared-wrapper {
