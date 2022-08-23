@@ -7,6 +7,10 @@ body {
   line-height: 21px;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 .container {
   max-width: $content-width;
   margin: 0 auto;
