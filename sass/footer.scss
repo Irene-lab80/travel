@@ -11,6 +11,11 @@
 
 .footer__copyright {
   margin-right: 27%;
+
+  @include media-mobile {
+    margin-right: 7%;
+    font-size: 12px;
+  }
 }
 
 .socials {

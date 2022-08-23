@@ -697,6 +697,12 @@ body {
 .footer__copyright {
   margin-right: 27%;
 }
+@media (max-width: 414px) {
+  .footer__copyright {
+    margin-right: 7%;
+    font-size: 12px;
+  }
+}
 
 .socials {
   display: flex;
